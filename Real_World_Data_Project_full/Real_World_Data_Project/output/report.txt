@@ -1,0 +1,15 @@
+Real‑World Data Project (Health Domain): Diabetes Dataset
+
+Dataset Overview:
+The diabetes dataset contains 442 observations with 10 baseline features (age, sex, body mass index, blood pressure, and six blood serum measurements) and a continuous target variable representing disease progression one year after baseline measurements. Features are standardised.
+
+Key Insights from Exploratory Analysis:
+- BMI values (feature 'bmi') range from -0.09 to 0.17, with a mean of -0.00.
+- Blood pressure ('bp') ranges from -0.11 to 0.13; its correlation with the target is 0.44.
+- The strongest correlation with the target is feature 's5' (serum level), with a correlation of 0.57.
+
+Model Evaluation:
+- Linear Regression: R² = 0.453, MSE = 2900.19.
+- Random Forest: R² = 0.443, MSE = 2952.01.
+
+Overall, both models explain roughly 45% of the variability in disease progression. The linear regression model attains a slightly higher R² compared to the Random Forest, while maintaining a lower mean squared error. This suggests that the linear model is simpler yet competitive, whereas the Random Forest shows no clear advantage on this dataset and may be more sensitive to the limited sample size.
